@@ -586,6 +586,22 @@ public class RESTRequest<T extends Resource> implements Serializable {
 	public void setResource(Resource mResourceRepresentation) {
 		this.mResource = (T) mResourceRepresentation;
 	}
+	
+	
+	/**
+	 * Getter for {@link ResourceRepresentation}
+	 *  
+	 * @return <T> The {@link ResourceRepresentation} class that request deals with
+	 * 
+	 * @see ResourceRepresentation
+	 * @see RESTRequest#mResource
+	 * @see RESTRequest#getResourceRepresentation()
+	 */
+	public T getResourceRepresentation() {
+		return this.mResource;
+	}
+	
+	
 
 	/**
 	 * Getter for extra parameters
